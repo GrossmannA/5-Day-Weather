@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>5 Day Weather</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+    <h1>5 Day Forecast</h1>
+  </header>
+  <div class="container-fluid" style="max-width: 1400px">
+    <div class="row">
+      <div class="container">
+        <div class="weather-input">
+          <h2 id="form-heading" class="mt-1 h3 form-label">
+            Search for a City:
+          </h2>
+          <form id="search-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group">
+                <input class="form-input weather-search" type="text" id="search-input"
+                  placeholder="E.g., Boston, Philadelphia, Miami" aria-labelledby="form-heading"
+                  aria-controls="today forecast" />
+                <div class="input-group-append">
+                  <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
+                    Search
+                  </button>
+                  <div class="cities-buttons" id="cities-buttons"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="list-group" id="history"></div>
+        </div>
+        <div class="weather-data">
+          <div class="weather">
+            <div class="details">
+            </div>
+          </div>
+          <div class="days-forecast">
+          </div>
+          <ul class="weather-cards" id="weather-cards">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
